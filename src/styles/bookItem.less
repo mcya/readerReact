@@ -1,0 +1,44 @@
+:local{
+  .box{
+    height: 100px;
+    border-bottom: 1px solid rgb(225, 225, 226);
+    padding: 10px 20px;
+    cursor: pointer;
+    &:hover{
+      background: rgb(225,225,226);
+    }
+    img{
+      height: 60px;
+      width: 45px;
+    }
+    p{
+      float: right;
+      text-align: left;
+      width: calc(~'100% - 60px');
+      height: 60px;
+    }
+    p span{
+      white-space: nowrap;
+      width: 100%;
+      display: inline-block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    p span:first-child{
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: black;
+    }
+    p span:last-child{
+      font-size: 1.0rem;
+      color:rgb(182,182,182);
+    }
+  }
+
+  .jiugongge{
+    float: 'left';
+    padding: '10px';
+    border: '1px solid #ff0';
+  }
+
+}

@@ -1,0 +1,193 @@
+:local {
+  .header{
+    background: #fff;
+    padding:0px 10px;
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+  }
+
+  .head-font-base{
+    font-size: 0.95rem;
+    color: #000;
+    opacity: 0.6;
+    float: right;
+  }
+
+  .origin{
+    .head-font-base;
+    font-size: 2rem;
+    margin-right: 20px;
+  }
+
+  .footer{
+    background: #fff;
+    padding:10px 20px;
+    position: fixed;
+    width: 100vw;
+    bottom: 0px;
+    display: flex;
+    color: #000;
+    text-align: center;
+    justify-content: space-around;
+    i {
+      color: #000;
+      font-size: 1.2rem;
+    }
+
+
+    .setting{
+      outline: none;
+      & > div{
+        width: 100vw;
+        height: 100px;
+        background-color: #fff;
+        position: absolute;
+        left: 0px;
+        top: -100px;
+        padding: 10px 20px;
+        div{
+          text-align: left;
+          padding: 5px 0px;
+          span{
+            margin-right: 20px;
+          }
+        }
+
+        .font{
+          font-size: 1.2rem;
+        }
+
+        .color{
+          i{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+
+
+    .zhangjie{
+      outline: none;
+      & > div{
+        width: 100vw;
+        height: 70px;
+        background-color: #fff;
+        position: absolute;
+        left: 0px;
+        top: -70px;
+        padding: 10px 20px;
+        div{
+          text-align: left;
+          padding: 5px 0px;
+          span{
+            margin-right: 20px;
+          }
+        }
+
+        .font{
+          font-size: 1.2rem;
+        }
+
+        .color{
+          i{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .icon-base{
+    font-size: 1.6rem;
+    color:#000;
+    display: inline-block;
+    line-height: 64px;
+    height: inherit;
+  }
+
+  .pre{
+    .icon-base;
+    padding-right: 10px;
+    float: left;
+  }
+/*内容*/
+  .box{
+    padding: 0px 10px 0 20px;
+    padding-bottom: 100px;
+    font-size: 1.2rem;
+    min-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    /*text-indent: 2em;*/
+  }
+  .control{
+    font-size: 1.0rem;
+    padding: 0px 50px;
+    cursor: pointer;
+    span:first-child{
+      float: left;
+    }
+    span:last-child{
+      float: right;
+    }
+  }
+  .zhangjieDj{
+    position: relative;
+    font-size: 1.0rem;
+    padding: 0px 10px;
+    cursor: pointer;
+    span:first-child{
+      float: left;
+    }
+    span:nth-child(2){
+      position: absolute;
+      margin: auto;
+      bottom: 0px;
+      top: 0px;
+      left: 70px;
+      display: inline-block;
+    }
+    span:last-child{
+      float: right;
+    }
+  }
+}
+// 目录
+:global {
+  .chapterList {
+    .ant-modal-footer,
+    .ant-modal-header,
+    .ant-modal-close{
+      display: none;
+    }
+
+    .ant-modal-body{
+      height: 60vh;
+      overflow: scroll;
+    }
+// 目录
+    p{
+      border-bottom: 1px solid rgb(225,225,226);
+      font-size: 1.0rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding: 10px 0px;
+    }
+
+    .choosed{
+      color: red;
+    }
+  }
+}
