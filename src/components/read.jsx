@@ -4,6 +4,7 @@ import {Layout, Spin, message, Icon, Modal} from 'antd';
 import styles from '../styles/read.less';
 import template from './template';
 import 'whatwg-fetch';
+import _isEmpty from '_isEmpty/lodash';
 import storejs from 'store/dist/store.legacy';
 
 const { Header, Footer } = Layout;
@@ -113,8 +114,8 @@ class Read extends React.Component{
       // 第一次进入的时候肯定是false
       console.log('this.state.yejianStatus', this.state.yejianStatus);
       if (this.state.yejianStatus === true) {
-        this.readSetting.backgroundColor = this.state.backgroundColorStatus;
-        this.readSetting.color = this.state.fontColorStatus;
+        this.readSetting.backgroundColor = _isEmpty(this.state.backgroundColorStatus) ? "#BEECBD" : this.state.backgroundColorStatus;
+        this.readSetting.color = _isEmpty(this.state.backgroundColorStatus) ? "#BEECBD" : this.state.fontColorStatus;
         this.setState({
           readSetting: this.readSetting,
           readSettingShow: false,
