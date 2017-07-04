@@ -111,16 +111,25 @@ class Read extends React.Component{
     this.yejianmoshi = () => {
       // 日变夜间
       // 第一次进入的时候肯定是false
+      console.log('this.state.yejianStatus', this.state.yejianStatus);
       if (this.state.yejianStatus === true) {
         this.readSetting.backgroundColor = this.state.backgroundColorStatus;
         this.readSetting.color = this.state.fontColorStatus;
-        this.setState({readSetting: this.readSetting, readSettingShow: false, yejianStatus: false });
+        this.setState({
+          readSetting: this.readSetting,
+          readSettingShow: false,
+          yejianStatus: false
+        });
         storejs.set('readSetting', this.readSetting);
       } else {
         // 夜间模式转换到日间模式
         this.readSetting.color = '#95938E'
         this.readSetting.backgroundColor = '#363230';
-        this.setState({readSetting: this.readSetting, readSettingShow: false, yejianStatus: true});
+        this.setState({
+          readSetting: this.readSetting,
+          readSettingShow: false,
+          yejianStatus: true
+        });
         storejs.set('readSetting', this.readSetting);
       }
     }
@@ -214,7 +223,12 @@ class Read extends React.Component{
               )
             })() : ''
           }
-          <div ref='box' className={styles.box} style={this.state.readSetting} onClick={this.shwoSetting} onScroll={this.readScroll}>
+          <div
+            ref='box'
+            className={styles.box}
+            style={this.state.readSetting}
+            onClick={this.shwoSetting}
+            onScroll={this.readScroll}>
           {this.state.loading ? '' : (()=>{
             return (
               <div>
