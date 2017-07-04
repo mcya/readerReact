@@ -4,7 +4,6 @@ import {Layout, Spin, message, Icon, Modal} from 'antd';
 import styles from '../styles/read.less';
 import template from './template';
 import 'whatwg-fetch';
-import _isEmpty from '_isEmpty/lodash';
 import storejs from 'store/dist/store.legacy';
 
 const { Header, Footer } = Layout;
@@ -21,7 +20,7 @@ class Read extends React.Component{
       loading: true,
       chapter: '',
       yejianStatus: false,
-      backgroundColorStatus: [],
+      backgroundColorStatus: '',
       fontColorStatus: [],
       show: false,
       readSetting: this.readSetting,
@@ -112,10 +111,10 @@ class Read extends React.Component{
     this.yejianmoshi = () => {
       // 日变夜间
       // 第一次进入的时候肯定是false
-      console.log('this.state.yejianStatus', this.state.yejianStatus);
+      console.log('this.state.yejianStatus', this.state.yejianStatus, this.state.backgroundColorStatus);
       if (this.state.yejianStatus === true) {
-        this.readSetting.backgroundColor = _isEmpty(this.state.backgroundColorStatus) ? "#BEECBD" : this.state.backgroundColorStatus;
-        this.readSetting.color = _isEmpty(this.state.backgroundColorStatus) ? "#BEECBD" : this.state.fontColorStatus;
+        this.readSetting.backgroundColor = this.state.backgroundColorStatus || '#fff';
+        this.readSetting.color = this.state.fontColorStatus || '#000';
         this.setState({
           readSetting: this.readSetting,
           readSettingShow: false,
