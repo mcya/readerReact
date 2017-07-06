@@ -198,7 +198,7 @@ class Read extends React.Component{
         <Layout >
           <Modal
             className="chapterList"
-            title="Vertically centered modal dialog"
+            title="章节列表"
             visible={this.state.chapterListShow}
             onOk={() => this.showChapterList(false)}
             onCancel={() => this.showChapterList(false)}

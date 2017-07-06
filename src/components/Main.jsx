@@ -104,6 +104,7 @@ class AppComponent extends React.Component {
           </ReactPullToRefresh>
           <BackTop />
           </Content>
+          <Footer></Footer>
         </Layout>
         {/* <div>
         </div> */}
