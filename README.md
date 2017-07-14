@@ -139,32 +139,6 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
 		componentWillUnmount
 ```
 
-展示
-========================
-###### 首页
-![首页列表模式](showImg/模式.png)
-![首页九宫格模式](showImg/九宫.png)
-
-###### 阅读
-![阅读](showImg/阅读对的.png)
-![阅读](showImg/阅读.png)
-
-![阅读](showImg/夜间.png)
-![阅读](showImg/目录.png)
-
-![阅读](showImg/章节.png)
-![阅读](showImg/皮肤.png)
-
-###### 换源
-![换源](showImg/换源.png)
-
-###### 搜索
-![搜索历史记录](showImg/搜搜历史.png)
-![搜索显示](showImg/列表.png)
-
-###### 详情
-![详情](showImg/详情.png)
-
 
 
 ###### 如需转载，请注明出处。
