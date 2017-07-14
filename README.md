@@ -16,10 +16,10 @@ http://lodashjs.com/docs (建议最小导入使用 eg: `import _isEmpty from 'lo
 
 ## 实现功能
 - [x] 移动阅读APP首页(宫格模式和列表模式)
-- [x] 移动阅读APP阅读页(皮肤[字体/背景]、章节切换、夜间模式、目录)
-- [x] 移动阅读APP换源页(内容换源)
-- [x] 移动阅读APP搜索页(历史记录、详细列表)
-- [x] 移动阅读APP详情页(用户操作和详细信息)
+- [x] 移动阅读APP阅读(皮肤[字体/背景]、章节切换、夜间模式、目录)
+- [x] 移动阅读APP换源(内容换源)
+- [x] 移动阅读APP搜索(历史记录、详细列表)
+- [x] 移动阅读APP详情(用户操作和详细信息)
 - [x] 下拉刷新列表
 - [x] 分享复制
 - [x] 阅读设置本地缓存
@@ -139,29 +139,30 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
 		componentWillUnmount
 ```
 
-组图
+展示
 ========================
 ###### 首页
 ![首页列表模式](showImg/模式.png)
-
-列表模式
-
 ![首页九宫格模式](showImg/九宫.png)
 
-九宫格模式
-
+###### 阅读
+![阅读](showImg/阅读对的.png)
 ![阅读](showImg/阅读.png)
 
+![阅读](showImg/夜间.png)
+![阅读](showImg/目录.png)
 
+![阅读](showImg/章节.png)
+![阅读](showImg/皮肤.png)
+
+###### 换源
 ![换源](showImg/换源.png)
 
-
+###### 搜索
 ![搜索历史记录](showImg/搜搜历史.png)
-
-
 ![搜索显示](showImg/列表.png)
 
-
+###### 详情
 ![详情](showImg/详情.png)
 
 
