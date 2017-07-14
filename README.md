@@ -138,13 +138,15 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
 	卸载		
 		componentWillUnmount
 ```
-###### 组图
+
+组图
+========================
 
 ![首页列表模式](showImg/模式.png)
 ![首页九宫格模式](showImg/九宫.png)
 ![阅读](showImg/阅读.png)
 ![换源](showImg/换源.png)
-![搜索历史记录](showImg/搜索历史.png)
+![搜索历史记录](showImg/搜搜历史.png)
 ![搜索显示](showImg/列表.png)
 ![详情](showImg/详情.png)
 
