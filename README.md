@@ -1,7 +1,7 @@
 ###### 如需转载，请注明出处。
 
 
-#### chrome安装如下插件辅助开发:
+#### 推荐chrome安装如下插件辅助开发:
 - React Developer Tools
 - Redux DevTools
 - livereload
@@ -138,11 +138,16 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
 	卸载		
 		componentWillUnmount
 ```
-###### React注意要点
-- 所有的组件render返回的标签，最外层只能有一个根标签
-- `defaultValue`只有在组件第一次渲染才起作用，除非组件被销毁后重建，所以直接通过state或者props里的value来控制组件的value([受控组件与非受控组件](http://www.cnblogs.com/qingguo/p/5857923.html))
-- 通过遍历器(for in, forEach, []数组)生成的控件一定要给每一条记录对应的控件key作唯一区分
-- 组件的分拆代码可以放在一个数组变量里，然后用{变量名}引入，数组形式可以省掉最外层的唯一标签了
+###### 组图
+
+![首页列表模式](showImg/模式.png)
+![首页九宫格模式](showImg/九宫.png)
+![阅读](showImg/阅读.png)
+![换源](showImg/换源.png)
+![搜索历史记录](showImg/搜索历史.png)
+![搜索显示](showImg/列表.png)
+![详情](showImg/详情.png)
+
 
 
 ###### 如需转载，请注明出处。
