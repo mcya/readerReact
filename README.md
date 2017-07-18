@@ -6,11 +6,21 @@
 - Redux DevTools
 - livereload
 
-#### 访问地址
+#### 本地安装
+```
+npm install
+npm start
+```
+
+```
+cnpm install
+cnpm start
+```
+
+#### 本地访问地址
 http://localhost:8000
 
-#### 强力工具库lodash建议使用
-http://lodashjs.com/docs (建议最小导入使用 eg: `import _isEmpty from 'lodash/isEmpty'`)
+#### [页面效果预览，点这里](./showImg)
 
 
 
@@ -134,7 +144,7 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
 		componentWillUpdate		更新前		
 		componentDidUpdate		更新后
 		componentWillReceiveProps	当接收到props时		参数:nextProps
-	    shouldComponentUpdate		是否执行更新
+	  shouldComponentUpdate		是否执行更新
 	卸载		
 		componentWillUnmount
 ```
