@@ -18,9 +18,12 @@ cnpm start
 ```
 
 #### 本地访问地址
+```
 http://localhost:8000
+```
 
-#### [页面效果预览，点这里](./showImg)
+
+#### [页面效果预览，点这里](./showImg/README.md)
 
 
 
