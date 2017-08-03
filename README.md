@@ -139,7 +139,7 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
 }),
 ```
 ###### React生命周期
-
+```
   | function | 说明 |
   ------------|----------------
   | componentWillMount  | 挂载前  |
@@ -149,8 +149,8 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
   | componentWillReceiveProps | 当接收到props时，参数:nextProps |
   | shouldComponentUpdate | 是否执行更新 |
   | componentWillUnmount | 卸载 |
-	
-
+```
+| function | 说明 |
 
 
 
