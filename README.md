@@ -150,7 +150,6 @@ React.PropTypes.arrayOf(React.PropTypes.number), // 指定类型组成的数组
   | shouldComponentUpdate | 是否执行更新 |
   | componentWillUnmount | 卸载 |
 ```
-| function | 说明 |
 
 
 
